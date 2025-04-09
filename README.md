@@ -66,7 +66,7 @@ RightDirection/
 1. **Clone the repository:**
 
 ```bash
-git clone https://github.com/your-username/right-direction.git
+git clone https://github.com/Vaibhav0911/commuter.git
 cd right-direction
 ```
 
@@ -91,14 +91,12 @@ npm start
 - Include keys like:
   - `MONGO_URI`
   - `JWT_SECRET`
-  - `REACT_APP_GOOGLE_MAPS_API_KEY`
 
 ---
 
 ## 📌 Contributors
 
 - 👤 **[Vaibhav chauhan, Rohit kainture, Aryan Singh]** - Full-stack Developer  
-- 🤝 Project guided by: [Your Guide or Mentor if any]  
 - 🛠️ Contributions welcome!
 
 ---
