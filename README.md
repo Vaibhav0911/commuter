@@ -1,70 +1,108 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Right Direction 🧭
 
-## Available Scripts
+Right Direction is a full-stack navigation web application designed to provide users with accurate route information, fare estimation, traffic updates, and a personalized commute history. Built using React for the frontend and Express.js with MongoDB for the backend, it ensures real-time interaction, authentication, and an intuitive user experience.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🔧 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🚀 Route Finder: Enter source and destination to get the best route.
+- 💵 Fare Estimation: Calculates estimated fare for your journey.
+- 🚦 Traffic Updates: Real-time traffic conditions.
+- 🧑‍💼 Authentication: Secure login/signup for personalized experience.
+- 🗺️ Commute History: Keeps record of user journeys.
+- 🎨 Interactive UI: Built with React, styled for clarity and responsiveness.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend:**
+- React.js
+- CSS 
+- Axios (for API communication)
 
-### `npm run build`
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB (with Mongoose)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**APIs & Libraries:**
+- OpenStreetMap for navigation
+- JWT for authentication
+- dotenv for environment management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Project Structure
 
-### `npm run eject`
+```
+RightDirection/
+│
+├── client/                 # React Frontend
+│   ├── public/
+│   └── src/
+│       ├── components/
+│       ├── pages/
+│       └── App.js
+│
+├── server/                 # Express Backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   └── server.js
+│
+├── .env
+├── package.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone https://github.com/your-username/right-direction.git
+cd right-direction
+```
 
-## Learn More
+2. **Setup the backend:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd server
+npm install
+node server.js
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Setup the frontend:**
 
-### Code Splitting
+```bash
+cd client
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Configure Environment:**
+- Create `.env` files in both frontend and backend directories.
+- Include keys like:
+  - `MONGO_URI`
+  - `JWT_SECRET`
+  - `REACT_APP_GOOGLE_MAPS_API_KEY`
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📌 Contributors
 
-### Making a Progressive Web App
+- 👤 **[Vaibhav chauhan, Rohit kainture, Aryan Singh]** - Full-stack Developer  
+- 🤝 Project guided by: [Your Guide or Mentor if any]  
+- 🛠️ Contributions welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
