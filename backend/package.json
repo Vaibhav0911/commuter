@@ -1,4 +1,10 @@
 {
+  "name": "commuter",
+  "version": "1.0.0",
+  "main": "index.js", 
+  "scripts": {
+    "start": "node index.js" 
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^2.2.0",
