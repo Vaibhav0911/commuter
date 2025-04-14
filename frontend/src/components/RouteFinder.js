@@ -20,6 +20,7 @@ const AdvancedRouteFinder = () => {
     const setStartOnMapRef = useRef(false);
     const setDestinationOnMapRef = useRef(false);
     const navigate = useNavigate();
+    const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:4000";
 
     useEffect(() => {
         if (map || control) return; // prevent multiple inits
@@ -110,7 +111,7 @@ const AdvancedRouteFinder = () => {
         };
 
         try {
-            const response = await fetch("http://localhost:4000/api/history", {
+            const response = await fetch("${API_BASE}/api/history", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -135,7 +136,7 @@ const AdvancedRouteFinder = () => {
     const fetchHistory = async () => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch("http://localhost:4000/api/history", {
+            const response = await fetch("${API_BASE}/api/history", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
