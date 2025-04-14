@@ -5,12 +5,13 @@ import "../styles.css";
 const Signup = () => {
   const [formData, setFormData] = useState({ email: "", password: "", fname: "", lname: "" });
   const navigate = useNavigate();
+  const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:4000";
 
   const handleSignup = async (event) => {
     event.preventDefault();
-    
+  
     try {
-      const response = await fetch("http://localhost:4000/api/auth/register", {
+      const response = await fetch("${API_BASE}/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
