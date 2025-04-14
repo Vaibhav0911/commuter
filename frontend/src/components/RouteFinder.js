@@ -111,7 +111,7 @@ const AdvancedRouteFinder = () => {
         };
 
         try {
-            const response = await fetch("${API_BASE}/api/history", {
+            const response = await fetch(`${API_BASE}/api/history`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -136,7 +136,7 @@ const AdvancedRouteFinder = () => {
     const fetchHistory = async () => {
         try {
             const token = localStorage.getItem("token");
-            const response = await fetch("${API_BASE}/api/history", {
+            const response = await fetch(`${API_BASE}/api/history`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
