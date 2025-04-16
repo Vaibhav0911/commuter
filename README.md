@@ -97,7 +97,7 @@ npm start
 
 ## 📌 Contributors
 
-- 👤 **[Vaibhav chauhan, Rohit kainture, Aryan Ghasoliya]** - Full-stack Developer  
+- 👤 **[Vaibhav chauhan, Rohit kaintura, Aryan Ghasoliya]** - Full-stack Developer  
 - 🤝 Project guided by: [Your Guide or Mentor if any]  
 - 🛠️ Contributions welcome!
 
